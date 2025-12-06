@@ -58,10 +58,9 @@ function makeSound(key){
 }
 
 function buttonAnimation(keyPressed){
-    //selecting a button div for changing css when clicked
     var activeButton = document.querySelector("."+keyPressed);
     activeButton.classList.add("pressed");
-    //settimeout has two parameters
+  
     setTimeout(function(){
         activeButton.classList.remove("pressed")
     },100);
